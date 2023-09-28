@@ -1,0 +1,78 @@
+			HTML BOOTSTRAP 
+
+1. INTRODUCTION = GEETING STARTED (KERANGKA HTML)
+2. NAVBAR = BAGIAN MENU
+    - container = jarak menu atas ke tengah
+    - <ul class="navbar-nav ms-auto"> (bagian home dll ke kanan)
+    - <nav class="navbar navbar-expand-lg navbar-dark bg-secondary">
+      (Ubah warna background dan tulisan "navbar-bg")
+	(style="background-color: #000000) css warna karep dewek
+    - shadow = biar navbar ada bayangan
+3. A CLASS = Ganti nama
+	- <li class="nav-item">
+              <a class="nav-link" href="#">Message</a>
+            </li>
+4. JUMBOTRON = BAGIAN KEPALA HTML (ADA DI BOOTSTRAP V4.6)
+	- <!-- My CSS-->
+    <link rel="stylesheet" href="style.css" />
+	(Bikin hal css baru buat ngisi jumbotron)
+
+	- .jumbotron {
+ 	 padding: 2rem 1rem;
+ 	 background-color: #dfdbdb;} (Ngatur warna di jumbotron)
+
+	- img = Bikin folder img diisikan foto 
+	 1. di jumbotron masukan kodingan = "<img src="img/WhatsApp Image 2022-09-18 at 15.32.53.jpeg" alt="BBF" width="200" />"
+    		class="rounded-circle" => Biar foto jadi bulet | img-thumbnail => Biar sekitar lingkaran ada putihnya
+
+	- svg = Bikin glombang (getwave.io)=> Link nya
+		<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+	
+5. LAYOUT = Containers (bikin pargraf collom)
+
+	- <section id="about">
+      <div class="container">
+        <div class="row text-center">
+          <div class="col">
+            <h2>ABOUT SHOP</h2>
+          </div>
+        </div> (Bikin collom di about)
+
+	- Layout = Columns 
+		<div class="row justify-content-center"> (Biar kolom ke tengah)
+		*fs-5 (font size)
+
+	- COMPONENTS = CARD
+		<div class="card" style="width: 18rem;">
+  		<img src="..." class="card-img-top" alt="...">
+  		<div class="card-body">
+    		<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+  			</div>
+			</div>
+		
+	*md = itu benerin posisi bentuk jika diliat di hp kebawah dan rapih
+
+5. MESSAGE 
+	FORMS = OVERVIEW = (Bikin kolom pesan/komentar)
+		<form>
+  	<div class="mb-3">
+    	<label for="exampleInputEmail1" class="form-label">Email address</label>
+    	<input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+    	<div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+  		</div>
+  	<div class="mb-3">
+    		<label for="exampleInputPassword1" class="form-label">Password</label>
+    	<input type="password" class="form-control" id="exampleInputPassword1">
+  		</div>
+  	<div class="mb-3 form-check">
+    		<input type="checkbox" class="form-check-input" id="exampleCheck1">
+    		<label class="form-check-label" for="exampleCheck1">Check me out</label>
+  	</div>
+  	<button type="submit" class="btn btn-primary">Submit</button>
+	</form>
+
+		- FORM = form control (Bikin komentar dengan kolom yg besar)
+			<div class="mb-3">
+  			<label for="exampleFormControlTextarea1" class="form-label">Example textarea</label>
+  			<textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+			</div> 
